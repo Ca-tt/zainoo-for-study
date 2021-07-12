@@ -1,11 +1,41 @@
-/* position */
-.is-absolute {
-  position: absolute;
+/* ! important */
+/* fix bulma's screen overflow on mobile devices  */
+.columns {
+	margin: 0;
 }
 
-/* on mobile screns */
+/* * position */
+.is-absolute {
+	position: absolute;
+}
+
+/* * spacing */
+.mb-12 {
+	margin-bottom: 6rem;
+}
+
+.mb-12-i {
+	margin-bottom: 6rem !important;
+}
+
+/* * sizing */
+.has-zero-height {
+	height: 0;
+}
+
+/* * responsive flexbox */
 @media screen and (max-width: 768px) {
-  .is-justify-content-flex-center-mobile {
-    justify-content: center !important;
-  }
+	.is-justify-content-center-mobile {
+		justify-content: center !important;
+	}
+
+	.is-flex-direction-column-mobile {
+		flex-direction: column !important;
+	}
+
+	.is-flex-centered-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }

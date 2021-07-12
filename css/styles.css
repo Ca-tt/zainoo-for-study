@@ -1,7 +1,32 @@
+* {
+  box-sizing: border-box !important;
+}
+
 body {
   font-family: 'Sofia Pro', serif;
 }
 
 .logo {
   font-family: 'Circular Std', serif;
+}
+
+.extra-care {
+  font-family: 'Sofia Pro Ultralight', serif;
+}
+
+.columns { 
+  /* max-width: 100%;  */
+  margin: 0;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  height: 0;
+  /* padding: 0; */
+  width: 33%;
+  border-bottom: 2px solid black;
 }
