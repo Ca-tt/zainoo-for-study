@@ -1,0 +1,11 @@
+/* position */
+.is-absolute {
+  position: absolute;
+}
+
+/* on mobile screns */
+@media screen and (max-width: 768px) {
+  .is-justify-content-flex-center-mobile {
+    justify-content: center !important;
+  }
+}
