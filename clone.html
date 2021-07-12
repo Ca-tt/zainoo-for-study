@@ -1,138 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zainoo</title>
-  <link rel="stylesheet" href="css/bulma.min.css">
-  <link rel="stylesheet" href="css/bulma-addon.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="fonts/Circular/circular-std.css">
-  <link rel="stylesheet" href="fonts/Sofia-Pro/sofia-pro.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zainoo</title>
+		<link rel="stylesheet" href="css/bulma.min.css" />
+		<link rel="stylesheet" href="css/bulma-addon.css" />
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<link rel="stylesheet" href="fonts/Circular/circular-std.css" />
+		<link rel="stylesheet" href="fonts/Sofia-Pro/sofia-pro.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="container px-4 py-6">
+			<header class="columns is-vcentered mb-6">
+				<!-- логотип -->
+				<div class="column has-text-centered-mobile">
+					<b class="brand-name is-size-3">zainoo</b>
+					<sup class="trademark is-uppercase is-absolute is-bold">tm</sup>
+				</div>
 
-  <div class="container px-4 py-6">
+				<!-- иконки, они же колонка справа -->
+				<div
+					class="column is-2-tablet has-text-centered-mobile columns is-mobile"
+				>
+					<div class="column">
+						<i class="fas fa-search"></i>
+					</div>
+					<div class="column">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+					<div class="column">
+						<i class="fas fa-user"></i>
+					</div>
+				</div>
+			</header>
+			<!-- конец шапки сайта -->
 
-    <header class="columns is-vcentered mb-6">
-      <!-- логотип -->
-      <div class="column has-text-centered-mobile">
-        <b class="brand-name is-size-3">zainoo</b>
-        <sup class="trademark is-uppercase is-absolute is-bold">tm</sup>
-      </div>
+			<!-- центральная часть сайта: ряд -->
+			<main class="columns">
+				<!-- колонка слева: навигация, extra care, learn more -->
+				<aside class="menu column is-3">
+					<!-- навигация со ссылками слева -->
+					<ul class="menu-list mb-12">
+						<li><a href="#" class="is-size-5 px-0 mb-6">Shoes</a></li>
+						<li><a href="#" class="is-size-5 px-0 mb-6">Bags</a></li>
+						<li>
+							<a href="#" class="is-size-5 px-0 mb-6"
+								>Accessories
+								<span class="tag is-light">New</span>
+							</a>
+						</li>
+						<li><a href="#" class="is-size-5 px-0 mb-6">Support</a></li>
+					</ul>
 
-      <!-- иконки, они же колонка справа -->
-      <div class="column is-2-tablet has-text-centered-mobile columns is-mobile">
-        <div class="column">
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="column">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="column">
-          <i class="fas fa-user"></i>
-        </div>
-      </div>
-    </header>
-    <!-- конец шапки сайта -->
+					<!-- extra care -->
+					<section class="
+							extra-care
+							block
+							columns
+							is-mobile is-paddingless
+							column
+							is-7 is-size-2
+							my-6
+						">
+						<!-- левая часть, черная -->
+						<div class="
+							column
+							is-paddingless
+							has-background-black has-text-white has-text-weight-bold
+						">
+						Extra<br />Care
+					</div>
+					<!-- правая часть, обычный текст -->
+						<div class="
+							column is-paddingless 
+							has-text-black
+						">
+							Foot<br />Tech
+						</div>
+					</section>
 
-    <!-- центральная часть сайта: ряд -->
-    <main class="columns">
-      
-    </main>
+					<!-- текст learn more -->
+					<section
+						class="learn-more block columns is-flex-centered-mobile mb-12-i"
+					>
+          
+						<!-- линия -->
+						<div
+							class="
+								line-container
+								column
+								is-4
+								flex
+								is-align-items-center
+								is-full-mobile
+								is-justify-content-center-mobile
+							"
+						>
+							<div class="line has-zero-height is-3 (test it out?)"></div>
+						</div>
+						<div class="learn-more-text column">learn more</div>
+					</section>
 
+					<!-- текст scroll down -->
+					<section class="scroll-down block has-text-centered-mobile px-4">
+						<a class="has-text-black" href="#"> Scroll down </a>
+					</section>
+				</aside>
 
-    <!-- центральная часть сайта: ряд -->
-    <main class="columns">
+				<!-- центральная секция сайта: текст, кнопки, слайдер -->
+				<main class="column"></main>
 
-      <!-- колонка слева: навигация, extra care, learn more -->
-      <aside class="
-        menu 
-        column
-        is-3
-      ">
-        <!-- навигация со ссылками слева -->
-        <ul class="menu-list mb-12">
-          <li><a href="#" class="is-size-5 px-0 mb-6">Shoes</a></li>
-          <li><a href="#" class="is-size-5 px-0 mb-6">Bags</a></li>
-          <li>
-            <a href="#" class="is-size-5 px-0 mb-6">Accessories
-              <span class="tag is-light">New</span>
-            </a>
-          </li>
-          <li><a href="#" class="is-size-5 px-0 mb-6">Support</a></li>
-        </ul>
-
-        <!-- extra care -->
-        <section class="
-          extra-care 
-          block 
-          columns is-mobile is-paddingless
-          column is-7
-          is-size-2 
-          my-6
-          ">
-          <div class="
-            column is-paddingless 
-            has-background-black 
-            has-text-white has-text-weight-bold
-          ">
-            Extra<br>Care
-          </div>
-          <div class="
-            column is-paddingless 
-            has-text-black
-          ">
-            Foot<br>Tech
-          </div>
-        </section>
-
-        <!-- текст learn more -->
-        <section class="
-          learn-more
-          block
-          columns
-          is-flex-centered-mobile
-          mb-12-i
-        ">
-
-          <!-- линия -->
-          <div class="
-            line-container 
-            column is-4 
-            flex is-align-items-center
-            is-full-mobile is-justify-content-center-mobile
-          ">
-            <div class="line has-zero-height is-3 (test it out?)"></div>
-          </div>
-          <div class="learn-more-text column">learn more</div>
-        </section>
-
-        <!-- текст scroll down -->
-        <section class="
-          scroll-down 
-          block
-          has-text-centered-mobile 
-          px-4
-        ">
-          <a class="has-text-black" href="#">
-            Scroll down
-          </a>
-        </section>
-
-        
-      </aside>
-
-      <!-- центральная секция сайта -->
-      <main class="column"></main>
-      <aside class="column"></aside>
-
-    </main>
-
-
-  </div>
-
-</body>
+				<!-- вертикальный -->
+				<aside class="column"></aside>
+			</main>
+		</div>
+	</body>
 </html>
