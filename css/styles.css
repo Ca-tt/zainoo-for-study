@@ -10,11 +10,11 @@ body {
   font-family: 'Circular Std', serif;
 }
 
-.extra-care {
+.extra-care, .title {
   font-family: 'Sofia Pro Ultralight', serif;
 }
 
 .line {
-  /* width: 33%; */
   border-bottom: 2px solid black;
 }
+

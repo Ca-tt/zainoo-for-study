@@ -9,6 +9,11 @@
 	position: absolute;
 }
 
+.is-absolute-top {
+	position: absolute;
+	top: 0;
+}
+
 /* * spacing */
 .mb-12 {
 	margin-bottom: 6rem;
@@ -21,6 +26,15 @@
 /* * sizing */
 .has-zero-height {
 	height: 0;
+}
+
+/* * flex order */
+.is-order-first {
+	order: 1;
+}
+
+.is-order-last {
+	order: 10;
 }
 
 /* * responsive flexbox */
@@ -38,4 +52,38 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.is-block-mobile {
+		display: block;
+	}
+
+	.is-absolute-mobile {
+		position: absolute;
+	}
+
+	.is-full-width-mobile {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.is-full-width-mobile-i {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
 }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+	.is-absolute-tablet {
+		position: absolute;
+	}
+
+	.is-rotated-upside-tablet {
+		transform: rotate(-90deg);
+	}
+
+	.mr-4-tablet {
+		margin-right: 1rem;
+	}
+}
+
