@@ -18,3 +18,18 @@ body {
   border-bottom: 2px solid black;
 }
 
+.product-info {
+  top: 3%;
+  max-width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .vertical-text {
+    writing-mode: vertical-lr;
+  }
+  
+  .vertical-text ul {
+    transform: rotate(-180deg);
+  }
+}
+
