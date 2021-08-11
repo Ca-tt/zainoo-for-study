@@ -30,6 +30,8 @@ body {
   max-width: 60%;
 }
 
+/* vertical lines */
+
 .lines {
   position: absolute;
   display: flex;
@@ -46,10 +48,42 @@ body {
   border-right: 1px solid #E9E9E9;
 }
 
+/* remove border from last line */
 .lines .line:last-child {
   border-right: 0;
 }
 
+.line.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.hanging-number {
+  color: #FBF4E5;
+  font-size: 22em;
+  z-index: -2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu li {
+  max-width: 75%;
+}
+
+.menu li a {
+  transition: background-color .5s; 
+}
+
+.product-info .price {
+  font-size: 2rem;
+  font-family: 'Sofia Pro Extralight';
+  color: black;
+}
+
+.row {
+  display: flex;
+}
 
 /* responsiveness */
 @media screen and (min-width: 768px) {
@@ -62,3 +96,10 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .menu li {
+    max-width: 100%;
+    text-align: center;
+  }
+
+}

@@ -1,208 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zainoo</title>
-  <link rel="stylesheet" href="css/bulma.min.css">
-  <link rel="stylesheet" href="css/bulma-addon.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="fonts/Circular/circular-std.css">
-  <link rel="stylesheet" href="fonts/Sofia-Pro/sofia-pro.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zainoo</title>
+		<link rel="stylesheet" href="css/bulma.min.css" />
+		<link rel="stylesheet" href="css/bulma-addon.css" />
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<link rel="stylesheet" href="fonts/Circular/circular-std.css" />
+		<link rel="stylesheet" href="fonts/Sofia-Pro/sofia-pro.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="dist/cart.css" />
+		<link rel="stylesheet" href="dist/animations.css" />
+	</head>
+	<body>
+		<div class="container px-4">
+			<!-- вертикальные линии через весь блок -->
+			<div class="lines">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
 
-  <div class="container px-4">
+			<header class="columns is-vcentered mb-6">
+				<!-- логотип -->
+				<div class="column has-text-centered-mobile">
+					<b class="brand-name is-size-3">zainoo</b>
+					<sup class="trademark is-uppercase is-absolute is-bold">tm</sup>
+				</div>
 
-    <!-- вертикальные линии через весь блок -->
-    <div class="lines ">
-      <div class="line "></div>
-      <div class="line "></div>
-      <div class="line "></div>
-      <div class="line "></div>
-      <div class="line "></div>
-    </div>
+				<!-- иконки, они же колонка справа -->
+				<div
+					class="
+						icons
+						column
+						is-2-tablet
+						has-text-right has-text-centered-mobile
+						is-size-5
+						columns
+						is-mobile is-paddingless
+					"
+				>
+					<div class="column">
+						<i class="fas fa-search is-clickable"></i>
+					</div>
+					<div class="column">
+						<i class="fas fa-shopping-cart is-clickable cart-trigger"></i>
+					</div>
+					<div class="column">
+						<i class="fas fa-user is-clickable"></i>
+					</div>
+				</div>
+			</header>
+			<!-- конец шапки сайта -->
 
-    <header class="columns is-vcentered mb-6">
-      <!-- логотип -->
-      <div class="column has-text-centered-mobile">
-        <b class="brand-name is-size-3">zainoo</b>
-        <sup class="trademark is-uppercase is-absolute is-bold">tm</sup>
-      </div>
+			<!-- центральная часть сайта: ряд -->
+			<main class="columns">
+				<aside class="menu column is-3">
+					<!-- навигация со ссылками слева -->
+					<ul class="menu-list mb-12">
+						<li><a href="#" class="is-size-5 px-0 mb-6">Shoes</a></li>
+						<li><a href="#" class="is-size-5 px-0 mb-6">Bags</a></li>
+						<li>
+							<a href="#" class="is-size-5 px-0 mb-6"
+								>Accessories
+								<span class="tag is-light">New</span>
+							</a>
+						</li>
+						<li><a href="#" class="is-size-5 px-0 mb-6">Support</a></li>
+					</ul>
 
-      <!-- иконки, они же колонка справа -->
-      <div class="icons column is-2-tablet has-text-right has-text-centered-mobile columns is-mobile is-paddingless">
-        <div class="column">
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="column">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="column">
-          <i class="fas fa-user"></i>
-        </div>
-      </div>
-    </header>
-    <!-- конец шапки сайта -->
+					<!-- extra care -->
+					<section
+						class="
+							extra-care
+							block
+							columns
+							is-mobile is-paddingless is-size-2
+							column
+							is-7
+							my-6
+						"
+					>
+						<!-- левая часть, черная -->
+						<div
+							class="
+								column
+								has-background-black has-text-white has-text-weight-bold
+								is-paddingless
+							"
+						>
+							Extra<br />Care
+						</div>
 
-    <!-- центральная часть сайта: ряд -->
-    <main class="columns">
+						<!-- правая часть, обычный текст -->
+						<div class="column has-text-black is-paddingless">
+							Foot<br />Tech
+						</div>
+					</section>
+					<!-- конец extra care -->
 
-      <aside class="menu column is-3">
+					<!-- learn more -->
+					<section
+						class="
+							learn-more
+							block
+							columns
+							is-flex-centered-mobile is-align-items-center
+							mb-12-i
+						"
+					>
+						<!-- линия -->
+						<div
+							class="
+								line-container
+								column
+								is-4
+								flex
+								is-align-items-center
+								is-full-mobile
+								is-justify-content-center-mobile
+							"
+						>
+							<div class="line has-zero-height is-3"></div>
+						</div>
 
-        <!-- навигация со ссылками слева -->
-        <ul class="menu-list mb-12">
-          <li><a href="#" class="is-size-5 px-0 mb-6">Shoes</a></li>
-          <li><a href="#" class="is-size-5 px-0 mb-6">Bags</a></li>
-          <li>
-            <a href="#" class="is-size-5 px-0 mb-6">Accessories
-              <span class="tag is-light">New</span>
-            </a>
-          </li>
-          <li><a href="#" class="is-size-5 px-0 mb-6">Support</a></li>
-        </ul>
+						<!-- текст learn more -->
+						<div class="learn-more-text column">learn more</div>
+					</section>
+					<!-- конец секции learn more -->
 
-        <!-- extra care -->
-        <section class="
-          extra-care
-          block
-          columns is-mobile is-paddingless
-          is-size-2
-          column is-7 
-          my-6
-        ">
+					<!-- текст scroll down -->
+					<section class="scroll-down block has-text-centered-mobile px-4">
+						<a class="has-text-black" href="#">
+							Scroll Up <i class="fas fa-arrow-up"></i>
+						</a>
+					</section>
+				</aside>
+				<!-- конец левой боковушки -->
 
-          <!-- левая часть, черная -->
-          <div class="
-            column
-            has-background-black has-text-white has-text-weight-bold
-            is-paddingless
-          ">
-            Extra<br />Care
-          </div>
+				<!-- центральная часть сайта: текст, кнопки, слайдер -->
+				<main
+					class="
+						middle-part
+						column
+						is-flex
+						is-relative
+						is-align-items-flex-end
+						is-flex-direction-column-mobile
+						has-text-centered-mobile
+					"
+				>
+					<!-- задний фон 94 -->
+					<div class="hanging-number">94</div>
 
-          <!-- правая часть, обычный текст -->
-          <div class="
-            column
-            has-text-black
-            is-paddingless
-          ">
-            Foot<br />Tech
-          </div>
-        </section>
-        <!-- конец extra care -->
+					<!-- текст и кнопки -->
+					<div class="product-info is-absolute-tablet is-full-width-mobile-i">
+						<h6 class="subtitle has-text-grey mb-2">
+							The best looks; Top Comfort
+						</h6>
 
-        <!-- learn more -->
-        <section class="
-          learn-more 
-          block 
-          columns
-          is-flex-centered-mobile
-          is-align-items-center
-          mb-12-i
-        ">
+						<!-- заголовок -->
+						<div class="is-flex is-justify-content-center-mobile">
+							<h1 class="title is-size-1">Comfy Maxer</h1>
+							<i class="far fa-registered"></i>
+						</div>
 
-          <!-- линия -->
-          <div class="
-            line-container column
-            is-4
-            flex
-            is-align-items-center
-            is-full-mobile
-            is-justify-content-center-mobile
-          ">
-            <div class="line has-zero-height is-3"></div>
-          </div>
+						<p class="description has-text-grey">
+							Our shoes fuse together an insole that cushions every move, laces
+							that you’ll never need to tie again, and an odor-fighting copper
+							thread lining.
+						</p>
 
-          <!-- текст learn more -->
-          <div class="learn-more-text column">learn more</div>
-        
-        </section>
-        <!-- конец секции learn more -->
+						<p class="price mb-4">$300</p>
 
-        <!-- текст scroll down -->
-        <section class="
-          scroll-down block
-          has-text-centered-mobile px-4
-        ">
-          <a class="has-text-black" href="#"> Scroll down </a>
-        </section>
-      </aside>
-      <!-- конец левой боковушки -->
+						<!-- кнопки -->
+						<div class="columns">
+							<button
+								class="
+									cart-trigger
+									button
+									is-large
+									has-background-black has-text-white
+									mr-4-tablet
+								"
+							>
+								<i class="fas fa-shopping-bag mr-2"></i>
+								Add to cart
+							</button>
+							<button class="button is-large">
+								<i class="far fa-play-circle mr-2"></i>
+								Watch Intro
+							</button>
+						</div>
+					</div>
 
-      <!-- центральная часть сайта: текст, кнопки, слайдер -->
-      <main class="
-        middle-part
-        column
-        is-flex
-        is-relative
-        is-align-items-flex-end
-        is-flex-direction-column-mobile
-        has-text-centered-mobile
-      ">
-        <!-- текст и кнопки -->
-        <div class="
-          product-info
-          is-absolute-tablet 
-          is-full-width-mobile-i
-        ">
-          <h6 class="subtitle has-text-grey mb-2">The best looks; Top Comfort</h6>
-          
-          <!-- заголовок -->
-          <div class="is-flex is-justify-content-center-mobile">
-            <h1 class="title is-size-1">Comfy Maxer</h1>
-            <i class="far fa-registered"></i>
-          </div>
-          
-          <p class="description has-text-grey mb-6">Our shoes fuse together an insole that cushions every move, laces that you’ll never need to tie again, and an odor-fighting copper thread lining.</p>
-          
-          <!-- кнопки -->
-          <div class="columns">
-            
-            <button class="button is-large has-background-black has-text-white mr-4-tablet">
-              <i class="fas fa-shopping-bag mr-2"></i>
-              Add to cart
-            </button>
-            <button class="button is-large">
-              <i class="far fa-play-circle mr-2"></i>
-              Watch Intro
-            </button>
-          </div>
+					<!-- слайдер -->
+					<div class="slider has-text-centered">
+						<div class="slide-item">
+							<img src="img/shoes.png" alt="" />
+						</div>
+						<!-- слайды -->
+						<div class="slides">01 / 04</div>
+					</div>
+				</main>
 
-        </div>
+				<aside
+					class="
+						vertical-text
+						menu
+						is-flex
+						is-flex-direction-column-mobile
+						is-justify-content-space-between
+					"
+				>
+					<ul
+						class="
+							menu-list
+							is-flex
+							has-text-centered-mobile
+							is-flex-direction-column-mobile
+						"
+					>
+						<li><a href="#">manufacturing</a></li>
+						<li><a href="#">packaging</a></li>
+						<li><a href="#">team</a></li>
+					</ul>
+					<ul class="menu-list is-flex is-justify-content-center-mobile">
+						<li><a href="#">fb</a></li>
+						<li><a href="#">tw</a></li>
+						<li><a href="#">in</a></li>
+					</ul>
+				</aside>
+			</main>
+		</div>
+		<!-- container ends here -->
 
-        <!-- слайдер -->
-        <div class="
-          slider has-text-centered
-        ">
-          <div class="slide-item">
-            <img src="img/shoes.png" alt="">
-          </div>
-          <!-- слайды -->
-          <div class="slides">
-            01 / 04
-          </div>
-        </div>
-      </main>
+		<!-- cart -->
+		<div class="cart">
 
-      <aside class="vertical-text menu is-flex is-flex-direction-column-mobile is-justify-content-space-between">
-        <ul class="menu-list is-flex has-text-centered-mobile is-flex-direction-column-mobile">
-          <li><a href="#">manufacturing</a></li>
-          <li><a href="#">packaging</a></li>
-          <li><a href="#">team</a></li>
-        </ul>
-        <ul class="menu-list is-flex is-justify-content-center-mobile">
-          <li><a href="#">fb</a></li>
-          <li><a href="#">tw</a></li>
-          <li><a href="#">in</a></li>
-        </ul>
-      </aside>
-      
-      
+			<!-- cart background -->
+			<div class="background">
 
-    </main>
-  </div>
-</body>
+				<!-- cart modal window -->
+				<div class="modal">
+
+					<!-- close icon at the top right -->
+					<div class="close-button has-text-right">
+						<i class="fas fa-times is-clickable"></i>
+					</div>
+
+					<!-- first row with text -->
+					<div class="row">You added 1 item to your cart</div>
+
+					<!-- another rows: items, price, total  -->
+					<div class="columns">
+						<div class="column img">
+							<img src="img/shoes.png" alt="" />
+						</div>
+						<div class="column">
+							<p class="title is-size-1">Comfy Maxer</p>
+							<section class="row">
+								Quantity:
+								<!-- plus sign -->
+								<p class="">
+									<span class="add-to-cart plus-sign"
+										><i class="fas fa-plus"></i
+									></span>
+								</p>
+
+								<!-- quantity number -->
+								<p class="">
+									<span class="quantity">1</span>
+								</p>
+								<!-- remove sign -->
+								<p class="">
+									<i class="remove-from-cart fas fa-minus"></i>
+								</p>
+							</section>
+
+							<!-- price -->
+							<p>
+								Price:
+								<span class="price"> $300.00 </span>
+							</p>
+						</div>
+					</div>
+
+					<!-- close button at the bottom center -->
+					<div class="row is-flex is-justify-content-center">
+						<div class="close-button">
+							<a href="#" class="btn btn-close">Close cart</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- cart bg ends here -->
+		</div>
+		<!-- cart ends here -->
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/page-scroll.js"></script>
+		<script src="js/cart.js"></script>
+	</body>
 </html>

@@ -1,0 +1,76 @@
+// prerequirements for proper position absolute
+body {
+  position: relative;
+}
+
+// cart styles
+// .cart class is used only for wrapping elements
+.cart {
+
+  // cart background
+  // hidden by default   
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+  }
+
+  // cart modal window
+  .modal {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    max-width: 75%;
+    position: fixed;
+    top: 100px;
+    left: auto;
+    bottom: auto;
+    right: auto;
+  }
+
+  // when animation happens
+  // make background and modal visible
+  .background {
+
+    &.is-visible {
+      display: flex;
+      opacity: 1;
+
+      .modal {
+        display: block;
+      }
+    }
+  }
+}
+
+// animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.is-fadeIn {
+  animation: fadeIn;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+.is-fadeOut {
+  animation: fadeIn;
+  animation-direction: reverse;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+
