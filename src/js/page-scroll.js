@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 let scrollButton = $(".scroll-down");
 // fix for not working with body
 let body = $("html, body");

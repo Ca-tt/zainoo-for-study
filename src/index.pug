@@ -1,0 +1,216 @@
+html
+head 
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width,initial-scale=1")
+	
+	title Zainoo
+
+	//- fonts
+	link(rel="stylesheet" href="fonts/Circular/circular-std.css")
+	link(rel="stylesheet" href="fonts/Sofia-Pro/sofia-pro.css")
+
+	//- libs
+	link(rel="stylesheet" href="css/fontawesome.min.css")
+	link(rel="stylesheet" href="css/bulma.min.css")
+
+	//- own styles
+	link(rel="stylesheet" href="scss/helpers.scss")
+	link(rel="stylesheet" href="scss/styles.scss")
+	link(rel="stylesheet" href="scss/cart.scss")
+body
+	//- site wrapper
+	.container.px-4
+
+		//- vertical lines through the site 
+		.lines
+			.line
+			.line
+			.line
+			.line
+			.line
+
+		//- site header	
+		header.columns.is-vcentered.mb-6
+			
+			//- logo 
+			.logo.column.has-text-centered-mobile
+				b.brand-name.is-size-3 zainoo
+				sup.trademark.is-uppercase.is-absolute.is-bold tm
+
+			//- icons to right 
+			.icons.column.is-2-tablet.has-text-right.has-text-centered-mobile.is-size-5.columns.is-mobile.is-paddingless
+				.column
+					i.fas.fa-search.is-clickable
+				.column
+					//- [js] cart trigger
+					i.fas.fa-shopping-cart.is-clickable.cart-trigger
+				.column
+					i.fas.fa-user.is-clickable
+		//- header ends here
+
+		//- site central section 
+		main.columns
+
+			//- left column with links and extra care
+			aside.menu.column.is-3
+
+				//- left navigation menu 
+				ul.menu-list.mb-12
+					li
+						a.is-size-5.px-0.mb-6(href="#") Shoes
+					li
+						a.is-size-5.px-0.mb-6(href="#") Bags
+					li
+						a.is-size-5.px-0.mb-6(href="#")
+							| Accessories
+							span.tag.is-light New
+					li
+						a.is-size-5.px-0.mb-6(href="#") Support
+				
+				//- Extra Care 
+				section.extra-care.block.columns.is-mobile.is-paddingless.is-size-2.column.is-7.my-6
+					//- left part with black bg 
+					.column.has-background-black.has-text-white.has-text-weight-bold.is-paddingless
+						| Extra 
+						br
+						| Care
+					//- right part of extra care
+					.column.has-text-black.is-paddingless
+						| Foot
+						br
+						| Tech
+				//- Extra Care ends here 
+
+				//- learn more 
+				section.learn-more.block.columns.is-flex-centered-mobile.is-align-items-center.mb-12-i
+					//- line
+					.line-container.column.is-4.flex.is-align-items-center.is-full-mobile.is-justify-content-center-mobile
+						.line.has-zero-height.is-3
+					//- text learn more 
+					.learn-more-text.column learn more
+				//- learn more ends here 
+
+				//- scroll down 
+				section.scroll-down.block.has-text-centered-mobile.px-4
+					a.has-text-black(href="#")
+						| Scroll Up 
+						i.fas.fa-arrow-up
+				//- left column [aside] ends here 
+				
+				
+			//- site central part: product description (text), slider 
+			main.middle-part.column.is-flex.is-relative.is-align-items-flex-end.is-flex-direction-column-mobile.has-text-centered-mobile
+				
+				//- 94 number 
+				.hanging-number 94
+
+				//- product description 
+				.product-info.is-absolute-tablet.is-full-width-mobile-i
+					h6.subtitle.has-text-grey.mb-2
+						| The best looks; Top Comfort
+
+					//- title 
+					.is-flex.is-justify-content-center-mobile
+						h1.title.is-size-1 Comfy Maxer
+						i.far.fa-registered
+					p.description.has-text-grey
+					.
+						Our shoes fuse together an insole that cushions every move, laces that you’ll never need to tie again, and an odor-fighting copper thread lining.
+
+					//- price 
+					p.price.mb-4 $300
+
+					//- buttons 
+					.columns
+						button.cart-trigger.button.is-large.has-background-black.has-text-white.mr-4-tablet
+							i.fas.fa-shopping-bag.mr-2
+							. 
+								Add to cart
+						button.button.is-large
+							i.far.fa-play-circle.mr-2
+							| Watch Intro
+
+				//- slider
+				.slider.has-text-centered
+					.slide-item
+						img(src="img/shoes.png", alt)
+						
+					//- slides
+					.slides 01 / 04
+			//- [main] central part ends here
+
+
+			//- right column: vertical text
+			aside.vertical-text.menu.is-flex.is-flex-direction-column-mobile.is-justify-content-space-between
+				ul.menu-list.is-flex.has-text-centered-mobile.is-flex-direction-column-mobile
+					li
+						a(href="#") manufacturing
+					li
+						a(href="#") packaging
+					li
+						a(href="#") team
+				ul.menu-list.is-flex.is-justify-content-center-mobile
+					li
+						a(href="#") fb
+					li
+						a(href="#") tw
+					li
+						a(href="#") in
+			//- right part ends here
+	
+	//- container ends here
+
+	//- cart 
+	.cart
+
+		//- cart background 
+		.background
+
+			//- cart modal window 
+			.modal
+
+				//- close icon at the top right 
+				.close-button.has-text-right
+					i.fas.fa-times.is-clickable
+			
+				//- first row with text 
+				.row You added 1 item to your cart
+			
+				//- another rows: items, price, total  
+				.columns
+					.column.img
+						img(src="img/shoes.png", alt)
+					.column
+						p.title.is-size-1 Comfy Maxer
+						section.row
+							| Quantity:
+						//- plus sign 
+						p
+							span.add-to-cart.plus-sign
+								i.fas.fa-plus
+						//- quantity number 
+						p
+							span.quantity 1
+						//- remove sign 
+						p
+							i.remove-from-cart.fas.fa-minus
+								//- price 
+								p
+									| Price:
+								span.price $300.00 
+									//- close button at the bottom center 
+									.row.is-flex.is-justify-content-center
+										.close-button
+											a.btn.btn-close(href="#") Close cart
+								//- cart bg ends here 
+	//- cart ends here 
+	
+
+	//- libs
+	script(src="js/jquery-3.6.0.min.js")
+
+	//- own scripts
+	script(src="js/script.js")
+	script(src="js/page-scroll.js")
+	script(src="js/cart.js")
