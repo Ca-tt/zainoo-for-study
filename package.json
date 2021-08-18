@@ -16,7 +16,8 @@
   "homepage": "https://github.com/Ca-tt/zainoo-for-study#readme",
   "dependencies": {
     "jquery": "^3.6.0",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "vue": "^3.2.2"
   },
   "devDependencies": {
     "pug": "^3.0.2",
