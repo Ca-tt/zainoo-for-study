@@ -38,26 +38,64 @@ let cart = {
 
 	addContent: function () {
 
+		// get data from product description
 		let productData = {
-			// imageSrc: $('.slide-item img').attr('src'),
 			image: $('.slide-item img').clone(),
 			title: $(".product-info .title").text(),
 			price: $(".product-info .price").text(),
 		}
 
-		console.log(productData);
-
+		// prep cells for data placement
 		let dataPlacement = {
-			image: $(".modal .img img"),
+			image: $(".modal .img"),
 			title: $(".modal .title"),
 			price: $(".modal .price"),
 		};
 
-		// dataPlacement.image.attr("src", productData.imageSrc);
+		// paste data
+
+
 		dataPlacement.image.html(productData.image);
+		dataPlacement.title.text(productData.title);
+		dataPlacement.price.text(productData.price);
+		
+	},
+
+	// count items, utilize "+" and "-" signs
+	counter: function() {
+		
+		let plusSign = $('.modal .fa-plus');
+		let minusSign = $('.modal .fa-minus');
+		let quantity = $('.modal .quantity');
+		let itemsCount = parseInt($(".modal .quantity").text(), 10);
+		let priceHolder = $('.modal .total-price');
+		let price = parseInt($(".modal .total-price").text(), 10);
+		
+		if (plusSign.on('click', function () {
+			itemsCount++;
+			quantity.text(itemsCount);
+			
+
+			totalPrice = itemsCount * price;
+
+			priceHolder.text(totalPrice);
+
+		}));
+		if (minusSign.on("click", function () {
+			if (itemsCount > 0) {
+				itemsCount--;
+				quantity.text(itemsCount);
+				
+				totalPrice = itemsCount * price;
+
+				priceHolder.text(totalPrice);
+				}
+			})
+		);
 
 
 	}
+
 };
 
 cart.trigger.on('click', function () {
@@ -65,7 +103,8 @@ cart.trigger.on('click', function () {
 });
 
 cart.background.on('click', function () {
-	cart.close();
+	// cart.close();
 });
 
-cart.addContent();
+// cart.addContent();
+cart.counter();
