@@ -53,8 +53,6 @@ let cart = {
 		};
 
 		// paste data
-
-
 		dataPlacement.image.html(productData.image);
 		dataPlacement.title.text(productData.title);
 		dataPlacement.price.text(productData.price);
@@ -75,12 +73,11 @@ let cart = {
 			itemsCount++;
 			quantity.text(itemsCount);
 			
-
 			totalPrice = itemsCount * price;
 
 			priceHolder.text(totalPrice);
-
 		}));
+
 		if (minusSign.on("click", function () {
 			if (itemsCount > 0) {
 				itemsCount--;

@@ -15,9 +15,7 @@ html
 		link(rel="stylesheet" href="css/bulma.min.css")
 
 		//- own styles
-		link(rel="stylesheet" href="scss/helpers.scss")
 		link(rel="stylesheet" href="scss/styles.scss")
-		link(rel="stylesheet" href="scss/cart.scss")
 	body
 		//- site wrapper
 		.container.px-4
@@ -160,50 +158,8 @@ html
 		
 		//- container ends here
 
-		//- cart background 
-		
-		.cart.background
-
-			//- cart modal window 
-			.modal
-
-				//- close icon at the top right 
-				.close-button.has-text-right
-					i.fas.fa-times.is-clickable
-			
-				//- first row with text 
-				div
-					p.count You added #[span.items 0 items] to your cart
-					p.deals Keep shopping to find best deals
-			
-				//- another rows: items, price, total  
-				.columns
-					.column.img
-						img(src="img/empty_cart-removebg-preview.png", alt)
-					.column
-						p.title.is-size-1 
-						//- | Comfy Maxer
-						section.row
-							| Quantity:
-						//- plus sign 
-						.columns.is-align-items-center.is-size-5
-							p.add-to-cart.plus-sign.mr-2
-								i.fas.fa-plus
-							//- quantity number 
-							p.quantity.mr-2 0
-							//- remove sign 
-							p
-								i.remove-from-cart.fas.fa-minus
-							//- price 
-						p.price Price: $
-						span.total-price 1.00 
-						//- close button at the bottom center 
-						.row.is-flex.is-justify-content-center
-							.close-button
-								a.btn.btn-close(href="#") Close cart
-						//- cart bg ends here 
-		//- cart ends here 
-		
+		//- import cart markup
+		//- include modules/cart/cart.pug
 
 		//- libs
 		script(src="js/jquery-3.6.0.min.js")
@@ -211,5 +167,5 @@ html
 		//- own scripts
 		script(src="js/script.js")
 		script(src="js/page-scroll.js")
-		script(src="js/cart.js")
 		script(src="js/player.js")
+		script(src="modules/cart/cart.js")
